@@ -1,0 +1,110 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <title>Href Attribute Example</title>
+        <link rel="stylesheet" href="und.css">
+        <script src="und.js"></script>
+    </head>
+
+
+    <body style="background-image: url('images/Raid_Physics_LoadingImage.jpg');background-size: cover;">
+		<label for="save">Save</label>
+		<button id="save" class="save" onclick="save();">Save as</button>
+		<label for="load">Load</label>
+		<input id="load" type="file" class="load" onchange="load();"></input>
+        <aside class="left">
+            <img src="images/BG_RuneSetting_05.png"/>
+            <div class="main">
+                <div id="build" class="container">
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag" ></div>
+                    <div draggable="true" class="empty drag lock" ></div>
+                    <div class=""></div>
+                </div>
+            </div>
+        </aside>
+
+
+        <aside class="right">
+			<div style="color:white;font-size:18px;">Toggle locks: <img id="toggleLock" onclick="toggleLock()" class="locked"/><br/></div>
+			
+			<button class="red" onclick="showRed();">Red Skills</button>
+			<button class="green" onclick="showGreen();">Green Skills</button>
+			<button class="blue" onclick="showBlue();">Blue Skills</button>
+				<div id="red" class="top">
+					<div id="redSkills" class="grid-container"></div>
+				</div>
+				<div id="green" class="top">
+					<div id="greenSkills" class="grid-container"></div>
+				</div>
+				<div id="blue" class="top">
+					<div id="blueSkills" class="grid-container"></div>
+				</div>
+			<br>
+			<button class="red" onclick="showRedLinks();">Red Links</button>
+			<button class="green" onclick="showGreenLinks();">Green Links</button>
+			<button class="blue" onclick="showBlueLinks();">Blue Links</button>
+				<div id="redLinks" >
+					<div id="redLink" class="grid-container"></div>
+				</div>
+				<div id="greenLinks" class="hide">
+					<div id="greenLink" class="grid-container"></div>
+				</div>
+				<div id="blueLinks" class="hide">
+					<div id="blueLink" class="grid-container"></div>
+				</div>
+        </aside>
+    </body>
+</html>

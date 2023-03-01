@@ -1,0 +1,164 @@
+aside.left {
+    float:left;
+    width: 512px;
+    height: 680px;
+    background-image: url('images/BG_RuneSetting_01.png');
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+aside.right {
+    float: right;
+    width: 700px;
+    height: 512px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+aside.left img {
+    position: fixed;
+    top: 79px;
+}
+
+aside.right button {
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 24px;
+}
+
+label{
+	background-color: black;
+	color: white;
+}
+
+button.red{
+	background-color:red;
+}
+
+button.green{
+	background-color:green;
+}
+
+button.blue{
+	background-color:blue;
+}
+
+img.locked{
+	content: url('images/runes/Icon_OptionToggleSwitchOff.png');
+    max-width: 65px;
+    max-height: 65px;
+}
+
+img.unlocked{
+	content: url('images/runes/Icon_OptionToggleSwitchOn.png');
+    max-width: 65px;
+    max-height: 65px;
+}
+
+img.drag {
+    position: fixed;
+    font-size: 0;
+    max-width: 65px;
+    max-height: 65px;
+    draggable: true;
+    cursor: move;
+}
+
+.hide {
+	display: none;
+}
+
+.grid-container {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%/11, max(64px, 100%/11)), 1fr));
+    gap: 0px 0px;
+}
+
+.grid-item {
+	width: 65px;
+	height: 65px;
+}
+
+.skill {
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+.bluelink, .redlink, .greenlink {
+	background-position-x: center;
+	background-position-y: center;
+	background-size:57%,cover,cover;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+.bluelinked, .redlinked, .greenLinked {
+	background-position-x: center;
+	background-position-y: center;
+	background-size:57%,90%,cover !important;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+.main {
+    display: flex; /* we will talk about this later ... */
+    position: relative;
+    margin-top: 43.5px;
+    margin-left: -6px;
+    --s: 55px;  /* size  */
+    --m: 1.3px;   /* margin */
+	--f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px); 
+}
+
+.left .container {
+    /* background-color: yellow; */
+    font-size: 0; /* disable white space between inline block element */
+}
+
+.left .container div {
+    /* background-color: blue; */
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s) * 1.1547);
+    display: inline-block;
+    position: relative;
+    font-size: 1; /* we reset the font-size if we want to add some content */
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+	margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+}
+
+.left .container div.drag {
+	background-image: url('images/BG_RunePlate_Slot_01.png');
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+}
+
+.left .container div.lock {
+	background-image: url('images/Icon_EnchantLock01.png'), url('images/BG_RunePlate_Slot_01.png');
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 50%, cover;
+	background-repeat: no-repeat;
+}
+
+.left .container::before {
+  content: "";
+  width: calc(var(--s)/2 + var(--m));
+  float: left;
+  height: 100%;
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),#000 0 var(--f));
+}
+
+.over {
+    background-color: yellow;
+}
